@@ -39,8 +39,11 @@ JWT_SECRET=your-secret-key
 REDIS_PORT=15499
 REDIS_PASS=your-redis-password
 REDIS_HOST=your-redis-host
+
+
 ## Project Structure
-  ![Alt Text](assets/project_structure.png)
+
+![Alt Text](assets/project_structure.png)
 
 
 
