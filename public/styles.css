@@ -1,0 +1,81 @@
+body {
+    background-color: #e0f7fa; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+
+  h1, h2 {
+    text-align: center;
+    color: #01579b; 
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  table thead {
+    background-color: #0288d1;
+    color: #fff;
+  }
+
+  table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  form div {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #01579b;
+  }
+
+  input[type="text"] {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  button {
+    background-color: #0288d1;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0277bd;
+  }
+
+  form[style*="display:inline;"] {
+    display: inline;
+  }

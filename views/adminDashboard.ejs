@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <div style="text-align: right; margin: 20px;">
+    <a href="/admin/logout" style="text-decoration: none; padding: 10px 20px; background-color: #FF4C4C; color: white; border-radius: 5px;">Logout</a>
+  </div>
+
+  <h1>Admin Dashboard</h1>
+
+  <h2>All FAQs</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Question</th>
+        <th>Answer</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% faqs.forEach(faq => { %>
+        <tr>
+          <td><%= faq.question %></td>
+          <td><%= faq.answer %></td>
+          <td>
+            <form action="/admin/delete-faq/<%= faq._id %>?_method=DELETE" method="POST" style="display:inline;">
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+  <h2>Create New FAQ</h2>
+  <form action="/admin/create-faq" method="POST">
+    <div>
+      <label for="question">Question:</label>
+      <input type="text" id="question" name="question" required>
+    </div>
+    <div>
+      <label for="answer">Answer:</label>
+      <input type="text" id="answer" name="answer" required>
+    </div>
+    <button type="submit">Create FAQ</button>
+  </form>
+</body>
+</html>
