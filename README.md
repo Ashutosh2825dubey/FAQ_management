@@ -3,7 +3,9 @@
 
 ## Overview
 
-Multilingual FAQ API is a RESTful API designed to manage FAQs in multiple languages. It integrates with Google Cloud Translate to provide language translation and uses Redis for caching. This API also secures routes using JWT for authentication.
+Multilingual FAQ API is a RESTful API designed to manage FAQs in multiple languages. It integrates with Google Cloud Translate to provide language translation and uses Redis for caching. This API also secures routes using JWT for authentication. 
+
+Additionally, an **Admin Dashboard** is available where the admin can log in, create new FAQs, and delete existing FAQs. JWT is used for secure authorization of admin routes.
 
 ## Features
 
@@ -63,33 +65,14 @@ Multilingual FAQ API is a RESTful API designed to manage FAQs in multiple langua
 
    This will start the API server in development mode with nodemon (auto-reload on changes).
 
-2. Debugging:
-
-   VS Code makes debugging easy. Use the built-in debugger by adding a launch configuration in `.vscode/launch.json`:
-
-   ```json
-   {
-     "version": "0.2.0",
-     "configurations": [
-       {
-         "type": "node",
-         "request": "launch",
-         "name": "Launch API",
-         "program": "${workspaceFolder}/app.js",
-         "envFile": "${workspaceFolder}/.env"
-       }
-     ]
-   }
-   ```
-
-   Once configured, press F5 to start debugging in VS Code.
-
 ## API Endpoints
 
-- **GET /faqs**: Retrieve a list of FAQs.
-- **POST /faqs**: Add a new FAQ.
-- **GET /faqs/:id**: Get a specific FAQ by ID.
-- **PUT /faqs/:id**: Update an FAQ by ID.
+- **GET /api/faqs**: Retrieve a list of FAQs.
+- **GET /admin/login**: Get the login page for Admin.
+- **GET /admin.dashboard**: Get the Dashboard for Admin.
+- **POST /admin/create-faqs**: Add a new FAQ.
+- **GET /api/faqs/?lang=hi**: Retrieve a list of FAQS in Hindi.
+- **GET /api/faqs/?lang=bn**: Retrieve a list of FAQS in Bengali.
 - **DELETE /faqs/:id**: Delete an FAQ by ID.
 
 ## Testing (VS Code)
@@ -97,7 +80,7 @@ Multilingual FAQ API is a RESTful API designed to manage FAQs in multiple langua
 1. Run tests: In the terminal, run:
 
    ```bash
-   npm test
+   npm run test
    ```
 
 2. VS Code Testing Tools:
@@ -114,6 +97,5 @@ Multilingual FAQ API is a RESTful API designed to manage FAQs in multiple langua
 - **Google Cloud Translate API**: Provides translation functionality.
 - **JWT**: For secure authentication.
 
-![Alt text]('assets/project_structure.png')
 
 
