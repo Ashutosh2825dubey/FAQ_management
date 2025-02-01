@@ -31,6 +31,7 @@ Multilingual FAQ API is a RESTful API designed to manage FAQs in multiple langua
 3. Install dependencies: Open the integrated terminal in VS Code and run:
   ```bash
    npm install
+   
 4. Set up environment variables: Create a .env file at the root of the project:
   ```bash
    PORT=3000
