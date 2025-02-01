@@ -32,12 +32,12 @@ Multilingual FAQ API is a RESTful API designed to manage FAQs in multiple langua
      ```bash
      npm install
 4. Set up environment variables: Create a .env file at the root of the project:
+    ### server port
+    ```bash
     PORT=3000
-    MONGODB_URI=mongodb://localhost:27017/your-db-name
+    MONGO_URI=mongodb://localhost:27017/your-db-name
     JWT_SECRET=your-secret-key
     REDIS_PORT=15499
-    REDIS_PASS=your-redis-password
-    REDIS_HOST=your-redis-host
 
 
 
