@@ -1,6 +1,4 @@
-Sure! Below is the content formatted as plain text. You can copy it directly into a `.txt` file.
 
-```
 # Multilingual FAQ API
 
 ## Overview
@@ -116,24 +114,6 @@ Multilingual FAQ API is a RESTful API designed to manage FAQs in multiple langua
 - **Google Cloud Translate API**: Provides translation functionality.
 - **JWT**: For secure authentication.
 
-## Extensions Recommended for VS Code
+![Alt text]('assets/project_structure.png')
 
-- **ESLint**: Ensure consistent code style.
-- **Prettier**: Automatic code formatting.
-- **DotENV**: Environment variable support.
-- **Jest or Mocha**: Test support extensions for easier development and debugging.
 
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (git checkout -b feature/new-feature).
-3. Commit your changes (git commit -m 'Add a new feature').
-4. Push to the branch (git push origin feature/new-feature).
-5. Open a pull request.
-
-## License
-
-Licensed under the MIT License. See the LICENSE file for details.
-```
-
-You can create a new text file (e.g., `README.txt`) and paste the above content into it.
